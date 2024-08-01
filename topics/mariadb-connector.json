@@ -1,0 +1,17 @@
+{
+    "name": "nations-connector",  
+    "config": {  
+      "connector.class": "io.debezium.connector.mariadb.MariaDbConnector",
+      "tasks.max": "1",  
+      "database.hostname": "db",  
+      "database.port": "3306",
+      "database.user": "root",
+      "database.password": "root",
+      "database.server.id": "184054",
+      "database.ssl.mode": "disabled",  
+      "topic.prefix": "db",
+      "database.include.list": "nation",  
+      "schema.history.internal.kafka.bootstrap.servers": "kafka:9092",  
+      "schema.history.internal.kafka.topic": "schema-changes.nation"  
+    }
+  }
